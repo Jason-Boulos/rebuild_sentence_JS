@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    // lacks validation
+const rebuildSentence = (words,lengths)=>{
+const newArray = []
+for(let i =0;i < words.length;i++){
+    newArray.push(words[i].slice(0, lengths[i]));
+}
+return newArray.join(' ')
+}
+const result = rebuildSentence([ "the", "sky", "is", "blue" ] , [ 3, 2, 2, 1 ]);
+console.log(result);
+</script>
+
+</body>
+</html>
